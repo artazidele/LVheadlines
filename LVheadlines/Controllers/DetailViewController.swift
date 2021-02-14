@@ -13,7 +13,7 @@ class DetailViewController: UIViewController {
     var contentString = String()
 
     
-    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet var titleLabel: UILabel!
     @IBOutlet weak var contentTextView: UITextView!
     @IBOutlet weak var imageView: UIImageView!
     override func viewDidLoad() {

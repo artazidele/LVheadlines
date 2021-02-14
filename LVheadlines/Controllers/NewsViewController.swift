@@ -80,7 +80,8 @@ extension NewsViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "feedCell", for: indexPath)
         cell.textLabel?.text = items[indexPath.row].title
-        cell.detailTextLabel?.text = items[indexPath.row].description
+        cell.imageView?.image = UIImage(contentsOfFile: items[indexPath.row].image)
+        
         
         return cell
     }

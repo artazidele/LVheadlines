@@ -50,9 +50,6 @@
                                                 </stackView>
                                             </subviews>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="tJw-cB-F7j" kind="show" id="dzd-Hx-qNr"/>
-                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -107,7 +104,7 @@
         <!--Detail View Controller-->
         <scene sceneID="Fii-DR-Ms8">
             <objects>
-                <viewController id="tJw-cB-F7j" customClass="DetailViewController" customModule="LVheadlines" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DetailViewController" id="tJw-cB-F7j" customClass="DetailViewController" customModule="LVheadlines" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nWE-Q9-1qT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -178,7 +175,7 @@
                     <connections>
                         <outlet property="contentTextView" destination="aMN-3J-SUr" id="Dx4-up-k2G"/>
                         <outlet property="imageView" destination="X5S-4q-wg2" id="VrL-Jh-3yj"/>
-                        <outlet property="titleLabel" destination="IBy-w1-taG" id="7sF-EQ-lhF"/>
+                        <outlet property="titleLabel" destination="IBy-w1-taG" id="8EX-yj-2wd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UMh-uY-pzo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -190,11 +187,11 @@
             <objects>
                 <viewController id="eww-gr-aCr" customClass="WebViewController" customModule="LVheadlines" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LwL-ND-DcF">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZmP-bx-NnF">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
