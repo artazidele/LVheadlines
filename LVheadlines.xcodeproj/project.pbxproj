@@ -3,27 +3,36 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		C2AA375925D999FB00EB0A67 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AA375825D999FB00EB0A67 /* AppDelegate.swift */; };
 		C2AA375B25D999FB00EB0A67 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AA375A25D999FB00EB0A67 /* SceneDelegate.swift */; };
-		C2AA375D25D999FB00EB0A67 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AA375C25D999FB00EB0A67 /* ViewController.swift */; };
+		C2AA375D25D999FB00EB0A67 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AA375C25D999FB00EB0A67 /* NewsViewController.swift */; };
 		C2AA376025D999FB00EB0A67 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2AA375E25D999FB00EB0A67 /* Main.storyboard */; };
 		C2AA376225D999FD00EB0A67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2AA376125D999FD00EB0A67 /* Assets.xcassets */; };
 		C2AA376525D999FD00EB0A67 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2AA376325D999FD00EB0A67 /* LaunchScreen.storyboard */; };
+		C2AA376F25D99A7300EB0A67 /* Gloss in Frameworks */ = {isa = PBXBuildFile; productRef = C2AA376E25D99A7300EB0A67 /* Gloss */; };
+		C2AA377825D99ACB00EB0A67 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AA377725D99ACB00EB0A67 /* Item.swift */; };
+		C2AA377C25D99B2300EB0A67 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AA377B25D99B2300EB0A67 /* DetailViewController.swift */; };
+		C2AA377F25D99B3600EB0A67 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AA377E25D99B3600EB0A67 /* WebViewController.swift */; };
+		C2AA378325D99FD800EB0A67 /* SavedNewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AA378225D99FD800EB0A67 /* SavedNewsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C2AA375525D999FB00EB0A67 /* LVheadlines.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LVheadlines.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2AA375825D999FB00EB0A67 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C2AA375A25D999FB00EB0A67 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C2AA375C25D999FB00EB0A67 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C2AA375C25D999FB00EB0A67 /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
 		C2AA375F25D999FB00EB0A67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C2AA376125D999FD00EB0A67 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C2AA376425D999FD00EB0A67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C2AA376625D999FD00EB0A67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2AA377725D99ACB00EB0A67 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		C2AA377B25D99B2300EB0A67 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		C2AA377E25D99B3600EB0A67 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		C2AA378225D99FD800EB0A67 /* SavedNewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedNewsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2AA376F25D99A7300EB0A67 /* Gloss in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +66,51 @@
 		C2AA375725D999FB00EB0A67 /* LVheadlines */ = {
 			isa = PBXGroup;
 			children = (
-				C2AA375825D999FB00EB0A67 /* AppDelegate.swift */,
-				C2AA375A25D999FB00EB0A67 /* SceneDelegate.swift */,
-				C2AA375C25D999FB00EB0A67 /* ViewController.swift */,
-				C2AA375E25D999FB00EB0A67 /* Main.storyboard */,
+				C2AA377625D99AAF00EB0A67 /* Model */,
+				C2AA377225D99A8A00EB0A67 /* AppDelegate */,
+				C2AA377425D99AA500EB0A67 /* Controllers */,
+				C2AA377325D99A9C00EB0A67 /* View */,
 				C2AA376125D999FD00EB0A67 /* Assets.xcassets */,
-				C2AA376325D999FD00EB0A67 /* LaunchScreen.storyboard */,
 				C2AA376625D999FD00EB0A67 /* Info.plist */,
 			);
 			path = LVheadlines;
+			sourceTree = "<group>";
+		};
+		C2AA377225D99A8A00EB0A67 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				C2AA375825D999FB00EB0A67 /* AppDelegate.swift */,
+				C2AA375A25D999FB00EB0A67 /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		C2AA377325D99A9C00EB0A67 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C2AA375E25D999FB00EB0A67 /* Main.storyboard */,
+				C2AA376325D999FD00EB0A67 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C2AA377425D99AA500EB0A67 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C2AA375C25D999FB00EB0A67 /* NewsViewController.swift */,
+				C2AA377B25D99B2300EB0A67 /* DetailViewController.swift */,
+				C2AA377E25D99B3600EB0A67 /* WebViewController.swift */,
+				C2AA378225D99FD800EB0A67 /* SavedNewsViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C2AA377625D99AAF00EB0A67 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C2AA377725D99ACB00EB0A67 /* Item.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +129,9 @@
 			dependencies = (
 			);
 			name = LVheadlines;
+			packageProductDependencies = (
+				C2AA376E25D99A7300EB0A67 /* Gloss */,
+			);
 			productName = LVheadlines;
 			productReference = C2AA375525D999FB00EB0A67 /* LVheadlines.app */;
 			productType = "com.apple.product-type.application";
@@ -110,6 +159,9 @@
 				Base,
 			);
 			mainGroup = C2AA374C25D999FB00EB0A67;
+			packageReferences = (
+				C2AA376D25D99A7300EB0A67 /* XCRemoteSwiftPackageReference "Gloss" */,
+			);
 			productRefGroup = C2AA375625D999FB00EB0A67 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,7 +189,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2AA375D25D999FB00EB0A67 /* ViewController.swift in Sources */,
+				C2AA377825D99ACB00EB0A67 /* Item.swift in Sources */,
+				C2AA377F25D99B3600EB0A67 /* WebViewController.swift in Sources */,
+				C2AA375D25D999FB00EB0A67 /* NewsViewController.swift in Sources */,
+				C2AA377C25D99B2300EB0A67 /* DetailViewController.swift in Sources */,
+				C2AA378325D99FD800EB0A67 /* SavedNewsViewController.swift in Sources */,
 				C2AA375925D999FB00EB0A67 /* AppDelegate.swift in Sources */,
 				C2AA375B25D999FB00EB0A67 /* SceneDelegate.swift in Sources */,
 			);
@@ -339,6 +395,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C2AA376D25D99A7300EB0A67 /* XCRemoteSwiftPackageReference "Gloss" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hkellaway/Gloss.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.2.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C2AA376E25D99A7300EB0A67 /* Gloss */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C2AA376D25D99A7300EB0A67 /* XCRemoteSwiftPackageReference "Gloss" */;
+			productName = Gloss;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C2AA374D25D999FB00EB0A67 /* Project object */;
 }
