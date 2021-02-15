@@ -11,6 +11,7 @@ class DetailViewController: UIViewController {
     var webURLString = String()
     var titleString = String()
     var contentString = String()
+    var imageString = String()
 
     
     @IBOutlet var titleLabel: UILabel!
@@ -24,7 +25,13 @@ class DetailViewController: UIViewController {
         
         titleLabel.text = titleString
         contentTextView.text = contentString
-        //imageView.image = UIImage()
+        guard let imageUrl: URL = URL(string: imageString) else { return }
+        guard let imageData = try? Data(contentsOf: imageUrl) else { return }
+        DispatchQueue.main.async {
+            let image = UIImage(data: imageData)
+            self.imageView.image = image
+        }
+        
         
     }
     

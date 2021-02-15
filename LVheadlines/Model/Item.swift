@@ -13,13 +13,13 @@ struct Item: JSONDecodable {
     var description: String
     var title: String
     var url: String
-    var image: String
+    var imageUrl: String
     
     init?(json: JSON) {
         self.title = "title" <~~ json ?? ""
         self.description = "description" <~~ json ?? ""
         self.url = "url" <~~ json ?? ""
-        self.image = "urlToImage" <~~ json ?? ""
+        self.imageUrl = "urlToImage" <~~ json ?? ""
         
     }
     

@@ -80,17 +80,29 @@ extension NewsViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "feedCell", for: indexPath)
         cell.textLabel?.text = items[indexPath.row].title
-        cell.imageView?.image = UIImage(contentsOfFile: items[indexPath.row].image)
+        //cell.imageView?.image = UIImage(contentsOfFile: items[indexPath.row].image)
+       // let image = getImage(indexPath: 3)
+            //cell.imageView.image = image
+        let imageString = items[indexPath.row].imageUrl
+        guard let imageUrl: URL = URL(string: imageString) else { return cell}
+        guard let imageData = try? Data(contentsOf: imageUrl) else { return cell}
+            let image = UIImage(data: imageData)
+            cell.imageView?.image = image
+        
+        
         
         
         return cell
     }
+    
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if let vc = UIStoryboard(name: "Main", bundle: Bundle.main).instantiateViewController(identifier: "DetailViewController") as? DetailViewController {
             vc.contentString = items[indexPath.row].description
             vc.titleString = items[indexPath.row].title
             vc.webURLString = items[indexPath.row].url
+            vc.imageString = items[indexPath.row].imageUrl
+            
             
             navigationController?.pushViewController(vc, animated: true)
             
