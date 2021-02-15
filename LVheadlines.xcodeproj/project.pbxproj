@@ -18,6 +18,7 @@
 		C2AA377C25D99B2300EB0A67 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AA377B25D99B2300EB0A67 /* DetailViewController.swift */; };
 		C2AA377F25D99B3600EB0A67 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AA377E25D99B3600EB0A67 /* WebViewController.swift */; };
 		C2AA378325D99FD800EB0A67 /* SavedNewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AA378225D99FD800EB0A67 /* SavedNewsViewController.swift */; };
+		C2AA378625DA887700EB0A67 /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AA378525DA887700EB0A67 /* ItemTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		C2AA377B25D99B2300EB0A67 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		C2AA377E25D99B3600EB0A67 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		C2AA378225D99FD800EB0A67 /* SavedNewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedNewsViewController.swift; sourceTree = "<group>"; };
+		C2AA378525DA887700EB0A67 /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 				C2AA377B25D99B2300EB0A67 /* DetailViewController.swift */,
 				C2AA377E25D99B3600EB0A67 /* WebViewController.swift */,
 				C2AA378225D99FD800EB0A67 /* SavedNewsViewController.swift */,
+				C2AA378525DA887700EB0A67 /* ItemTableViewCell.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -193,6 +196,7 @@
 				C2AA377F25D99B3600EB0A67 /* WebViewController.swift in Sources */,
 				C2AA375D25D999FB00EB0A67 /* NewsViewController.swift in Sources */,
 				C2AA377C25D99B2300EB0A67 /* DetailViewController.swift in Sources */,
+				C2AA378625DA887700EB0A67 /* ItemTableViewCell.swift in Sources */,
 				C2AA378325D99FD800EB0A67 /* SavedNewsViewController.swift in Sources */,
 				C2AA375925D999FB00EB0A67 /* AppDelegate.swift in Sources */,
 				C2AA375B25D999FB00EB0A67 /* SceneDelegate.swift in Sources */,

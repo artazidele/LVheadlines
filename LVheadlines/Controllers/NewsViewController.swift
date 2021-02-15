@@ -15,10 +15,12 @@ class NewsViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         self.title = "LV headlines"
+        tableView.rowHeight = 100
     }
     @IBAction func getDataTapped(_ sender: Any) {
         handleData()
@@ -78,22 +80,28 @@ extension NewsViewController: UITableViewDataSource, UITableViewDelegate {
         return items.count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "feedCell", for: indexPath)
+        /*let cell = tableView.dequeueReusableCell(withIdentifier: "feedCell", for: indexPath)
         cell.textLabel?.text = items[indexPath.row].title
-        //cell.imageView?.image = UIImage(contentsOfFile: items[indexPath.row].image)
-       // let image = getImage(indexPath: 3)
-            //cell.imageView.image = image
+        
         let imageString = items[indexPath.row].imageUrl
         guard let imageUrl: URL = URL(string: imageString) else { return cell}
         guard let imageData = try? Data(contentsOf: imageUrl) else { return cell}
             let image = UIImage(data: imageData)
             cell.imageView?.image = image
-        
-        
-        
-        
+        */
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "feedCell", for: indexPath) as? ItemTableViewCell else {
+            return UITableViewCell()
+        }
+       
+        let newsItem = items[indexPath.row]
+        cell.setUI(with: newsItem)
+        cell.selectionStyle = .none
         return cell
+        
     }
+    /*func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 220
+    }*/
     
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
