@@ -12,6 +12,7 @@ class WebViewController: UIViewController, WKNavigationDelegate {
 
     var urlString = String()
     
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet var webView: WKWebView!
     override func loadView() {
         webView = WKWebView()
@@ -33,10 +34,14 @@ class WebViewController: UIViewController, WKNavigationDelegate {
     
     func webView(_ webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation!) {
         print("Start nav")
+        guard let activInd = activityIndicator else { return }
+        activInd.startAnimating()
     }
     
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
         print("nav stopped")
+        guard let activInd = activityIndicator else { return }
+        activInd.stopAnimating()
     }
 
 }
