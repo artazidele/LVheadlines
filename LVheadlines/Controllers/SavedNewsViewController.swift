@@ -9,10 +9,16 @@ import UIKit
 
 class SavedNewsViewController: UIViewController {
 
+    @IBOutlet weak var tableView: UITableView!
+    var savedItems: [SavedItem] = []
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         self.title = "Saved news"
+        getSavedItems()
+    }
+    func getSavedItems() {
+        
     }
 
     /*
@@ -26,3 +32,7 @@ class SavedNewsViewController: UIViewController {
     */
 
 }
+    
+
+
+
